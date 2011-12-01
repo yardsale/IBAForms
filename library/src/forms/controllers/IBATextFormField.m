@@ -40,6 +40,7 @@
 - (IBATextFormFieldCell *)textFormFieldCell {
 	if (textFormFieldCell_ == nil) {
 		textFormFieldCell_ = [[IBATextFormFieldCell alloc] initWithFormFieldStyle:self.formFieldStyle reuseIdentifier:@"Cell"];
+        
 		textFormFieldCell_.textField.delegate = self;
 		textFormFieldCell_.textField.enabled = NO;
 	}
@@ -57,7 +58,7 @@
 #pragma mark UITextFieldDelegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-	return [[IBAInputManager sharedIBAInputManager] activateNextInputRequestor];;
+	return [[IBAInputManager sharedIBAInputManager] activateNextInputRequestor];
 }
 
 

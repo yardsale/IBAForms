@@ -23,12 +23,16 @@
 @synthesize labelFont = labelFont_;
 @synthesize labelFrame = labelFrame_;
 @synthesize labelAutoresizingMask = labelAutoresizingMask_;
+
 @synthesize valueTextColor = valueTextColor_;
 @synthesize valueBackgroundColor = valueBackgroundColor_;
 @synthesize valueFont = valueFont_;
 @synthesize valueFrame = valueFrame_;
 @synthesize valueTextAlignment = valueTextAlignment_;
 @synthesize valueAutoresizingMask = valueAutoresizingMask_;
+
+@synthesize iconFrame = iconFrame_;
+
 @synthesize activeColor = activeColor_;
 @synthesize accessoryType = accessoryType_;
 
@@ -40,7 +44,7 @@
 	IBA_RELEASE_SAFELY(valueTextColor_);
 	IBA_RELEASE_SAFELY(valueBackgroundColor_);
 	IBA_RELEASE_SAFELY(valueFont_);
-	
+
 	IBA_RELEASE_SAFELY(activeColor_);
 
 	[super dealloc];
@@ -62,8 +66,11 @@
 		self.valueFrame = CGRectMake(IBAFormFieldValueX, IBAFormFieldValueY, IBAFormFieldValueWidth, IBAFormFieldValueHeight);
 		self.valueTextAlignment = IBAFormFieldValueTextAlignment;
 		self.valueAutoresizingMask = UIViewAutoresizingFlexibleWidth;
+        
+        self.iconFrame = CGRectMake(IBAFormFieldIconX, IBAFormFieldIconY,
+                                    IBAFormFieldIconWidth, IBAFormFieldIconHeight);
 
-		self.accessoryType = UITableViewCellAccessoryNone;
+		self.accessoryType = IBAFormFieldCellAccessoryType;
 
 		self.activeColor = IBAFormFieldActiveColor;
 	}

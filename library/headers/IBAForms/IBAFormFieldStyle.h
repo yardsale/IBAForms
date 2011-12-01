@@ -28,6 +28,8 @@
 	CGRect valueFrame_;
 	UITextAlignment valueTextAlignment_;
 	UIViewAutoresizing valueAutoresizingMask_;
+    
+    CGRect iconFrame_;
 
 	UITableViewCellAccessoryType accessoryType_;
 
@@ -47,6 +49,8 @@
 @property (nonatomic, assign) CGRect valueFrame;
 @property (nonatomic, assign) UITextAlignment valueTextAlignment;
 @property (nonatomic, assign) UIViewAutoresizing valueAutoresizingMask;
+
+@property (nonatomic, assign) CGRect iconFrame;
 
 @property (nonatomic, assign) UITableViewCellAccessoryType accessoryType;
 

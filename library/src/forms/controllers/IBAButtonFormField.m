@@ -56,7 +56,7 @@
 - (IBAFormFieldCell *)cell {
 	if (cell_ == nil) {
 		cell_ = [[IBALabelFormCell alloc] initWithFormFieldStyle:self.formFieldStyle reuseIdentifier:@"Cell"];
-		cell_.selectionStyle = UITableViewCellSelectionStyleGray;
+		cell_.selectionStyle = UITableViewCellSelectionStyleBlue;
 
 		if (self.iconImage != nil) {
 			UIImageView *imageView = [[UIImageView alloc] initWithImage:self.iconImage];
@@ -66,7 +66,8 @@
 			CGPoint imageCenter = CGPointMake(cell_.label.bounds.origin.x + CGRectGetMidX(imageView.bounds), CGRectGetMidY(cellViewBounds));
 
 			imageView.center = imageCenter;
-
+            imageView.frame = self.formFieldStyle.iconFrame;
+            
 			[cell_.cellView addSubview:imageView];
 			[imageView release];
 		}

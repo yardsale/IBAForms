@@ -28,21 +28,28 @@
 #define IBAFormFieldKey @"IBAFormFieldKey"
 
 // Form field label style
-#define IBAFormFieldLabelX 10
-#define IBAFormFieldLabelY 5
-#define IBAFormFieldLabelWidth 60
+#define IBAFormFieldLabelX 15
+#define IBAFormFieldLabelY 8
+#define IBAFormFieldLabelWidth 95
 #define IBAFormFieldLabelHeight 30
-#define IBAFormFieldLabelFont [UIFont systemFontOfSize:12]
-#define IBAFormFieldLabelTextColor [UIColor grayColor]
-#define IBAFormFieldLabelTextAlignment UITextAlignmentRight
+#define IBAFormFieldLabelFont [UIFont boldSystemFontOfSize:14]
+#define IBAFormFieldLabelTextColor [UIColor blackColor]
+#define IBAFormFieldLabelTextAlignment UITextAlignmentLeft
 #define IBAFormFieldLabelBackgroundColor [UIColor whiteColor]
 
 // Form field value style
-#define IBAFormFieldValueX 75
-#define IBAFormFieldValueY 10
-#define IBAFormFieldValueWidth 235
-#define IBAFormFieldValueHeight 26
-#define IBAFormFieldValueFont [UIFont systemFontOfSize:16]
-#define IBAFormFieldValueTextColor [UIColor blackColor]
-#define IBAFormFieldValueTextAlignment UITextAlignmentLeft
+#define IBAFormFieldValueX 105
+#define IBAFormFieldValueY 8
+#define IBAFormFieldValueWidth 195
+#define IBAFormFieldValueHeight 30
+#define IBAFormFieldValueFont [UIFont systemFontOfSize:14]
+#define IBAFormFieldValueTextColor [UIColor darkGrayColor]
+#define IBAFormFieldValueTextAlignment UITextAlignmentRight
 #define IBAFormFieldValueBackgroundColor [UIColor whiteColor]
+
+// Form field cell style
+#define IBAFormFieldCellAccessoryType UITableViewCellAccessoryNone
+#define IBAFormFieldIconX 0
+#define IBAFormFieldIconY 0
+#define IBAFormFieldIconWidth 40
+#define IBAFormFieldIconHeight 40
