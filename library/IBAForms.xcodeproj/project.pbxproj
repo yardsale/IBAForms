@@ -528,78 +528,6 @@
 			};
 			name = Release;
 		};
-		6419914B13D787220076492A /* Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PREBINDING = NO;
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Staging;
-		};
-		6419914C13D787220076492A /* Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7,
-					armv6,
-				);
-				DSTROOT = /tmp/IBAForms.dst;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = IBAForms_Prefix.pch;
-				GCC_VERSION = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = IBAForms;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Staging;
-		};
-		641BB26F13E2B56A00AE150F /* Fake Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PREBINDING = NO;
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = "Fake Staging";
-		};
-		641BB27013E2B56A00AE150F /* Fake Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7,
-					armv6,
-				);
-				DSTROOT = /tmp/IBAForms.dst;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = IBAForms_Prefix.pch;
-				GCC_VERSION = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = IBAForms;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = "Fake Staging";
-		};
 		643E918B13D78F8F00489D88 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -799,8 +727,6 @@
 				646D9E2513F4176A00C13EDB /* App Store */,
 				6468BB2A13F68C6000EE56A2 /* Ad Hoc */,
 				6468BB3D13F68CFC00EE56A2 /* Enterprise OTA */,
-				6419914C13D787220076492A /* Staging */,
-				641BB27013E2B56A00AE150F /* Fake Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -815,8 +741,6 @@
 				646D9E2413F4176A00C13EDB /* App Store */,
 				6468BB2913F68C6000EE56A2 /* Ad Hoc */,
 				6468BB3C13F68CFC00EE56A2 /* Enterprise OTA */,
-				6419914B13D787220076492A /* Staging */,
-				641BB26F13E2B56A00AE150F /* Fake Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
